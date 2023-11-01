@@ -18,5 +18,7 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+    <key>GIDSignInClientID</key>
+    <string>113354232432-ud5qg9orkeordiotk759he5adnim0bn7.apps.googleusercontent.com</string>
 </dict>
 </plist>

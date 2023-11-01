@@ -8,7 +8,6 @@
 import UIKit
 
 class OnBoardViewController: UIViewController {
-    let window = (UIApplication.shared.delegate as? AppDelegate)?.window
     @IBOutlet weak var onBoardCollection: UICollectionView!
     @IBOutlet weak var titleLb: UILabel!
     @IBOutlet weak var descriptionLb: UILabel!
@@ -29,6 +28,7 @@ class OnBoardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCollectionView()
+        navigationController?.isNavigationBarHidden = true
         pageControl.numberOfPages = OnBoardSlide.onBoard.count
         onBoardCollection.delegate = self
         onBoardCollection.dataSource = self
@@ -50,16 +50,15 @@ class OnBoardViewController: UIViewController {
    
     
     @IBAction func skipBtn(_ sender: Any) {
+//        OnBoardServices.shared.makeOnBoard()
         let gotoLogin = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ScreenSelectedViewController")
-        present(gotoLogin, animated: true)
-        window?.rootViewController = gotoLogin
-        window?.makeKeyAndVisible()
+        navigationController?.pushViewController(gotoLogin, animated: true)
     }
     @IBAction func nextPageControl(_ sender: Any) {
         if currentPage == OnBoardSlide.onBoard.count - 1{
+//            OnBoardServices.shared.makeOnBoard()
             let gotoLogin = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ScreenSelectedViewController")
-            present(gotoLogin, animated: true)
-            
+            navigationController?.pushViewController(gotoLogin, animated: true)
         }else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)

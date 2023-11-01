@@ -10,7 +10,7 @@ import UIKit
 class ScreenSelectedViewController: UIViewController {
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var registerBtn: UIButton!
-    
+    let window = (UIApplication.shared.delegate as? AppDelegate)?.window
     override func viewDidLoad() {
         super.viewDidLoad()
         loginBtn.layer.cornerRadius = 6
@@ -19,10 +19,12 @@ class ScreenSelectedViewController: UIViewController {
     
     @IBAction func loginBtn(_ sender: Any) {
         let gotoLogin = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginSegmentedViewController")
-        present(gotoLogin, animated: true)
+        navigationController?.pushViewController(gotoLogin, animated: true)
     }
     
     @IBAction func registerBtn(_ sender: Any) {
+        let gotoRegister = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "RegisterViewController")
+        navigationController?.pushViewController(gotoRegister, animated: true)
     }
     
 }

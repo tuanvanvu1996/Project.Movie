@@ -10,6 +10,12 @@
 		9C4F393F409EE217F75BBAA3 /* Pods_Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C8CEE53D7C148BF52692E19 /* Pods_Movie.framework */; };
 		C7189E263CCE6CAF73B80AEF /* Pods_MovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81634ED5422DD76A8A8941C8 /* Pods_MovieTests.framework */; };
 		DA319B49E2E665807817D71D /* Pods_Movie_MovieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451647CFFCE6FA84CBE0B334 /* Pods_Movie_MovieUITests.framework */; };
+		F4429F592AEE0384004F22B5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4429F582AEE0384004F22B5 /* RegisterViewController.swift */; };
+		F4429F5E2AEE03A6004F22B5 /* VerificationPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4429F5D2AEE03A6004F22B5 /* VerificationPhoneViewController.swift */; };
+		F4429F672AEE0BC7004F22B5 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4429F662AEE0BC7004F22B5 /* ForgetPasswordViewController.swift */; };
+		F4429F6C2AEE0C1A004F22B5 /* CongratulationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4429F6B2AEE0C1A004F22B5 /* CongratulationsViewController.swift */; };
+		F4429F752AEE1947004F22B5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4429F742AEE1947004F22B5 /* MainViewController.swift */; };
+		F495F4952AF128B7003F1769 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F495F4942AF128B7003F1769 /* GoogleService-Info.plist */; };
 		F4F8D37A2AECEAAB0020820A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8D3792AECEAAB0020820A /* AppDelegate.swift */; };
 		F4F8D37C2AECEAAB0020820A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8D37B2AECEAAB0020820A /* SceneDelegate.swift */; };
 		F4F8D3812AECEAAB0020820A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4F8D37F2AECEAAB0020820A /* Main.storyboard */; };
@@ -45,7 +51,6 @@
 		F4F8D4662AED19D80020820A /* OnBoardServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8D4652AED19D80020820A /* OnBoardServices.swift */; };
 		F4F8D46C2AED1D870020820A /* LoginEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8D46B2AED1D870020820A /* LoginEmailViewController.swift */; };
 		F4F8D4742AED1D930020820A /* LoginPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8D4732AED1D930020820A /* LoginPhoneViewController.swift */; };
-		F4F8D4792AED23900020820A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4F8D4782AED23900020820A /* GoogleService-Info.plist */; };
 		F4F8D47E2AED24BD0020820A /* LoginSegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F8D47D2AED24BD0020820A /* LoginSegmentedViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +81,12 @@
 		B6970F15AFD0213300757038 /* Pods-Movie-MovieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie-MovieUITests.debug.xcconfig"; path = "Target Support Files/Pods-Movie-MovieUITests/Pods-Movie-MovieUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C2C6C77F478F0D2993C4CEDF /* Pods-MovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieTests.debug.xcconfig"; path = "Target Support Files/Pods-MovieTests/Pods-MovieTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E38B060DD2B30092CEA4F891 /* Pods-Movie-MovieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Movie-MovieUITests.release.xcconfig"; path = "Target Support Files/Pods-Movie-MovieUITests/Pods-Movie-MovieUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F4429F582AEE0384004F22B5 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F4429F5D2AEE03A6004F22B5 /* VerificationPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerificationPhoneViewController.swift; sourceTree = "<group>"; };
+		F4429F662AEE0BC7004F22B5 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		F4429F6B2AEE0C1A004F22B5 /* CongratulationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationsViewController.swift; sourceTree = "<group>"; };
+		F4429F742AEE1947004F22B5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F495F4942AF128B7003F1769 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4F8D3762AECEAAB0020820A /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4F8D3792AECEAAB0020820A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4F8D37B2AECEAAB0020820A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +128,6 @@
 		F4F8D4652AED19D80020820A /* OnBoardServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardServices.swift; sourceTree = "<group>"; };
 		F4F8D46B2AED1D870020820A /* LoginEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEmailViewController.swift; sourceTree = "<group>"; };
 		F4F8D4732AED1D930020820A /* LoginPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPhoneViewController.swift; sourceTree = "<group>"; };
-		F4F8D4782AED23900020820A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4F8D47D2AED24BD0020820A /* LoginSegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSegmentedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,10 +182,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F4429F542AEE02FC004F22B5 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F4429F582AEE0384004F22B5 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F4429F622AEE0B8D004F22B5 /* Forget Password */ = {
+			isa = PBXGroup;
+			children = (
+				F4429F662AEE0BC7004F22B5 /* ForgetPasswordViewController.swift */,
+				F4429F6B2AEE0C1A004F22B5 /* CongratulationsViewController.swift */,
+			);
+			path = "Forget Password";
+			sourceTree = "<group>";
+		};
+		F4429F702AEE1912004F22B5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F4429F742AEE1947004F22B5 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
 		F4F8D36D2AECEAAB0020820A = {
 			isa = PBXGroup;
 			children = (
-				F4F8D4782AED23900020820A /* GoogleService-Info.plist */,
+				F495F4942AF128B7003F1769 /* GoogleService-Info.plist */,
 				F4F8D3782AECEAAB0020820A /* Movie */,
 				F4F8D38F2AECEAAF0020820A /* MovieTests */,
 				F4F8D39A2AECEAAF0020820A /* MovieUITests */,
@@ -276,6 +311,9 @@
 		F4F8D40D2AED100D0020820A /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				F4429F702AEE1912004F22B5 /* Main */,
+				F4429F622AEE0B8D004F22B5 /* Forget Password */,
+				F4429F542AEE02FC004F22B5 /* Register */,
 				F4F8D46A2AED1D530020820A /* LoginScreen */,
 				F4F8D40E2AED101A0020820A /* OnBoardScreen */,
 				F4F8D40F2AED102F0020820A /* ScreenSelected */,
@@ -315,6 +353,7 @@
 				F4F8D47D2AED24BD0020820A /* LoginSegmentedViewController.swift */,
 				F4F8D46B2AED1D870020820A /* LoginEmailViewController.swift */,
 				F4F8D4732AED1D930020820A /* LoginPhoneViewController.swift */,
+				F4429F5D2AEE03A6004F22B5 /* VerificationPhoneViewController.swift */,
 			);
 			path = LoginScreen;
 			sourceTree = "<group>";
@@ -442,11 +481,11 @@
 				F4F8D3F62AED02530020820A /* Poppins-LightItalic.ttf in Resources */,
 				F4F8D3862AECEAAF0020820A /* LaunchScreen.storyboard in Resources */,
 				F4F8D3F02AED02530020820A /* Poppins-SemiBoldItalic.ttf in Resources */,
+				F495F4952AF128B7003F1769 /* GoogleService-Info.plist in Resources */,
 				F4F8D3F52AED02530020820A /* Poppins-Regular.ttf in Resources */,
 				F4F8D3F12AED02530020820A /* Poppins-ExtraBoldItalic.ttf in Resources */,
 				F4F8D3F72AED02530020820A /* Poppins-Bold.ttf in Resources */,
 				F4F8D3EB2AED02530020820A /* Poppins-ThinItalic.ttf in Resources */,
-				F4F8D4792AED23900020820A /* GoogleService-Info.plist in Resources */,
 				F4F8D3EF2AED02530020820A /* Poppins-Medium.ttf in Resources */,
 				F4F8D3832AECEAAF0020820A /* Assets.xcassets in Resources */,
 				F4F8D3812AECEAAB0020820A /* Main.storyboard in Resources */,
@@ -584,10 +623,15 @@
 				F4F8D37A2AECEAAB0020820A /* AppDelegate.swift in Sources */,
 				F4F8D4612AED183A0020820A /* AuthServices.swift in Sources */,
 				F4F8D37C2AECEAAB0020820A /* SceneDelegate.swift in Sources */,
+				F4429F752AEE1947004F22B5 /* MainViewController.swift in Sources */,
+				F4429F672AEE0BC7004F22B5 /* ForgetPasswordViewController.swift in Sources */,
 				F4F8D4042AED06380020820A /* OnBoardViewController.swift in Sources */,
 				F4F8D3CF2AECFEB70020820A /* OnBoardSlide.swift in Sources */,
+				F4429F6C2AEE0C1A004F22B5 /* CongratulationsViewController.swift in Sources */,
 				F4F8D47E2AED24BD0020820A /* LoginSegmentedViewController.swift in Sources */,
+				F4429F592AEE0384004F22B5 /* RegisterViewController.swift in Sources */,
 				F4F8D4092AED10070020820A /* ScreenSelectedViewController.swift in Sources */,
+				F4429F5E2AEE03A6004F22B5 /* VerificationPhoneViewController.swift in Sources */,
 				F4F8D46C2AED1D870020820A /* LoginEmailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -766,6 +810,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRCSUJQH3N;
 				INFOPLIST_FILE = Movie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -785,6 +830,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JRCSUJQH3N;
 				INFOPLIST_FILE = Movie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

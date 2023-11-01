@@ -10,6 +10,7 @@ target 'Movie' do
   pod 'KeychainSwift', '~> 20.0'
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
+  pod 'GoogleSignIn'
   target 'MovieTests' do
     inherit! :search_paths
     # Pods for testing
