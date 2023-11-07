@@ -12,5 +12,4 @@ class OneBoardCollectionViewCell: UICollectionViewCell {
     func configue(image:UIImage) {
         imageOnBoard.image = image
     }
-    
 }

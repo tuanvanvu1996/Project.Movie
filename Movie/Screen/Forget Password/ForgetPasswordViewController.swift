@@ -17,6 +17,7 @@ class ForgetPasswordViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
         backBtn.layer.cornerRadius = 6
         emailTF.layer.cornerRadius = 6
         emailTF.layer.borderWidth = 1

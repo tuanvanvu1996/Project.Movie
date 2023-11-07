@@ -50,19 +50,20 @@ class OnBoardViewController: UIViewController {
    
     
     @IBAction func skipBtn(_ sender: Any) {
-//        OnBoardServices.shared.makeOnBoard()
+        OnBoardServices.shared.makeOnBoard()
         let gotoLogin = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ScreenSelectedViewController")
         navigationController?.pushViewController(gotoLogin, animated: true)
     }
     @IBAction func nextPageControl(_ sender: Any) {
         if currentPage == OnBoardSlide.onBoard.count - 1{
-//            OnBoardServices.shared.makeOnBoard()
+            OnBoardServices.shared.makeOnBoard()
             let gotoLogin = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "ScreenSelectedViewController")
             navigationController?.pushViewController(gotoLogin, animated: true)
         }else {
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
             onBoardCollection.scrollToItem(at: indexPath, at: .centeredVertically, animated: true)
+            showCaption(atIndex: currentPage)
         }
     }
 }

@@ -628,6 +628,7 @@ PODS:
     - abseil/base/base_internal
     - abseil/base/config
     - abseil/meta/type_traits
+  - Alamofire (5.0.0)
   - AppAuth (1.6.2):
     - AppAuth/Core (= 1.6.2)
     - AppAuth/ExternalUserAgent (= 1.6.2)
@@ -752,6 +753,7 @@ PODS:
     - GTMSessionFetcher/Core (< 4.0, >= 1.5)
   - GTMSessionFetcher/Core (3.1.1)
   - KeychainSwift (20.0.0)
+  - Kingfisher (7.10.0)
   - leveldb-library (1.22.2)
   - MBProgressHUD (1.2.0)
   - nanopb (2.30909.0):
@@ -763,15 +765,18 @@ PODS:
   - RecaptchaInterop (100.0.0)
 
 DEPENDENCIES:
+  - Alamofire (= 5.0)
   - FirebaseAuth
   - FirebaseFirestore
   - GoogleSignIn
   - KeychainSwift (~> 20.0)
+  - Kingfisher (~> 7.0)
   - MBProgressHUD (~> 1.2.0)
 
 SPEC REPOS:
   trunk:
     - abseil
+    - Alamofire
     - AppAuth
     - BoringSSL-GRPC
     - FirebaseAppCheckInterop
@@ -786,6 +791,7 @@ SPEC REPOS:
     - GTMAppAuth
     - GTMSessionFetcher
     - KeychainSwift
+    - Kingfisher
     - leveldb-library
     - MBProgressHUD
     - nanopb
@@ -794,6 +800,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   abseil: 926fb7a82dc6d2b8e1f2ed7f3a718bce691d1e46
+  Alamofire: 58ff2bfb8daaacaa233d5c36e37b10a5248f59b1
   AppAuth: 3bb1d1cd9340bd09f5ed189fb00b1cc28e1e8570
   BoringSSL-GRPC: 3175b25143e648463a56daeaaa499c6cb86dad33
   FirebaseAppCheckInterop: 82358cff9f33452dd44259e88eea5e562500b1cb
@@ -808,12 +815,13 @@ SPEC CHECKSUMS:
   GTMAppAuth: 99fb010047ba3973b7026e45393f51f27ab965ae
   GTMSessionFetcher: e8647203b65cee28c5f73d0f473d096653945e72
   KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  Kingfisher: a18f05d3b6d37d8650ee4a3e61d57a28fc6207f6
   leveldb-library: f03246171cce0484482ec291f88b6d563699ee06
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   PromisesObjC: c50d2056b5253dadbd6c2bea79b0674bd5a52fa4
   RecaptchaInterop: 7d1a4a01a6b2cb1610a47ef3f85f0c411434cb21
 
-PODFILE CHECKSUM: f409ec7d7544d73b6c42f9de81b3f7c8162af247
+PODFILE CHECKSUM: de954fa5dff55a7384179f14937a4e46491b5012
 
 COCOAPODS: 1.14.2

@@ -16,6 +16,7 @@ class LoginSegmentedViewController: UIViewController {
     @IBOutlet weak var descriptionLb: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
         backBtn.layer.cornerRadius = 6
         backBtn.layer.borderWidth = 1
         

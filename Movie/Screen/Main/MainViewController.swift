@@ -6,13 +6,14 @@
 //
 
 import UIKit
-
+import CommonCrypto
 class MainViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationController?.isNavigationBarHidden = true
         // Do any additional setup after loading the view.
+        
     }
     
 

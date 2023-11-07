@@ -11,6 +11,9 @@ target 'Movie' do
   pod 'FirebaseAuth'
   pod 'FirebaseFirestore'
   pod 'GoogleSignIn'
+  pod 'Kingfisher', '~> 7.0'
+  pod 'Alamofire', '5.0'
+  pod 'Kingfisher', '~> 7.0'
   target 'MovieTests' do
     inherit! :search_paths
     # Pods for testing

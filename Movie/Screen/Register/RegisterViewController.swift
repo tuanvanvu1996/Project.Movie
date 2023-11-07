@@ -14,9 +14,6 @@ class RegisterViewController: UIViewController {
     var passwordCheck:Bool = false
     var confirmPasswordCheck:Bool = false
     @IBOutlet weak var backBtn: UIButton!
-    @IBOutlet weak var usernameTF: UITextField!
-    @IBOutlet weak var usernameError: UIView!
-    @IBOutlet weak var usernameErrorLb: UILabel!
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var errorEmail: UIView!
     @IBOutlet weak var errorEmailLB: UILabel!
@@ -32,7 +29,7 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        setupUsernameSuccess()
+        navigationController?.isNavigationBarHidden = true
         setupEmailSuccess()
         setupPasswordSuccess()
         setupConfirmPasswordSuccess()
@@ -40,29 +37,20 @@ class RegisterViewController: UIViewController {
     private func setupView() {
         backBtn.layer.cornerRadius = 6
         backBtn.layer.borderWidth = 1
-        usernameTF.placeholder = "Username"
         emailTF.placeholder = "Email Address"
         passwordTF.placeholder = "Password"
         confirmPasswordTF.placeholder = "ConfirmPassword"
-        usernameTF.clearButtonMode = .whileEditing
         emailTF.clearButtonMode = .whileEditing
         emailTF.layer.cornerRadius = 6
-        usernameTF.layer.cornerRadius = 6
         passwordTF.layer.cornerRadius = 6
         emailTF.layer.borderWidth = 1
         passwordTF.layer.borderWidth = 1
-        usernameTF.layer.borderWidth = 1
         confirmPasswordTF.layer.borderWidth = 1
         confirmPasswordTF.layer.cornerRadius = 6
         backBtn.layer.cornerRadius = 6
         registerBtn.layer.cornerRadius = 6
     }
-    private func setupUsernameSuccess() {
-        usernameError.isHidden = true
-        usernameTF.layer.borderColor = UIColor.black.cgColor
-        usernameTF.backgroundColor = .clear
-        
-    }
+    
     private func setupEmailSuccess() {
         errorEmail.isHidden = true
         emailTF.keyboardType = .emailAddress
@@ -83,12 +71,7 @@ class RegisterViewController: UIViewController {
         confirmPasswordTF.layer.borderColor = UIColor.black.cgColor
         confirmPasswordTF.backgroundColor = .clear
     }
-    private func setupUsernameFail() {
-        usernameError.isHidden = false
-        usernameTF.layer.borderColor = UIColor(red: 0.76, green: 0.00, blue: 0.32, alpha: 1.00).cgColor
-        usernameTF.backgroundColor = UIColor(red: 1.00, green: 0.95, blue: 0.97, alpha: 1.00)
-        
-    }
+    
     private func setupEmailFail() {
         errorEmail.isHidden = false
         emailTF.layer.borderColor = UIColor(red: 0.76, green: 0.00, blue: 0.32, alpha: 1.00).cgColor
@@ -106,15 +89,6 @@ class RegisterViewController: UIViewController {
         confirmPasswordTF.backgroundColor = UIColor(red: 1.00, green: 0.95, blue: 0.97, alpha: 1.00)
     }
     @IBAction func registerBtn(_ sender: Any) {
-        let usernameText = usernameTF.text ?? ""
-        var usernameSuccess = false
-        if usernameText.isEmpty {
-            usernameErrorLb.text = "Usename can't Empty"
-            setupUsernameFail()
-        }else {
-            setupUsernameSuccess()
-            usernameSuccess = true
-        }
         let emailText = emailTF.text ?? ""
         var emailSuccess = false
         if emailText.isEmpty {
@@ -161,7 +135,7 @@ class RegisterViewController: UIViewController {
             confirmPasswordSuccess = true
         }
         
-        let isValidRegister = usernameSuccess && emailSuccess && passwordSuccess && confirmPasswordSuccess
+        let isValidRegister = emailSuccess && passwordSuccess && confirmPasswordSuccess
         
         if isValidRegister == true {
             registerFirebase()
@@ -200,7 +174,8 @@ class RegisterViewController: UIViewController {
         present(alert, animated: true)
     }
     @IBAction func signInBtn(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        let backToLogin = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginSegmentedViewController")
+        navigationController?.pushViewController(backToLogin, animated: true)
     }
     
     @IBAction func showPassword(_ sender: Any) {
@@ -226,6 +201,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func backToLogin(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        let backToLogin = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "LoginSegmentedViewController")
+        navigationController?.pushViewController(backToLogin, animated: true)
     }
 }
